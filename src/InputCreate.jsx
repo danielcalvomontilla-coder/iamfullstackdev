@@ -29,8 +29,8 @@ function InputCreate({ setUpdate }) {
             throw new Error(`Error en la solicitud `)
         }        
 
-        } catch (err) {
-            console.log(err)
+        } catch (error) {
+            console.log(error)
 
         }
     }
