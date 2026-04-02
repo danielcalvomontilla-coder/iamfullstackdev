@@ -7,7 +7,7 @@ import InputCreate from "./InputCreate.jsx";
 
 const App = () => {
   const [data, setData] = useState(null)
-  const urlApi = 'http://localhost:3005'
+  const urlApi = import.meta.env.VITE_APP_API_URL || 'http://localhost:3005'
   const [update, setUpdate] = useState(false)
 
 const fetchData = async () => {
