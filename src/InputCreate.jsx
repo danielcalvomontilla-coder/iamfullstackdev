@@ -8,7 +8,7 @@ function InputCreate({ setUpdate }) {
         event.preventDefault()
 
         const urlBase = import.meta.env.VITE_APP_API_URL || 'http://localhost:3005/'
-        const urlApi = urlBase+'/create' 
+        const urlApi = urlBase+'create' 
         const payload = { title }
 
         try {
