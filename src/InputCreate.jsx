@@ -8,7 +8,7 @@ function InputCreate({ setUpdate }) {
         event.preventDefault()
 
         const urlBase = import.meta.env.VITE_APP_API_URL || 'http://localhost:3005/'
-        const urlApi = urlBase + '/create' 
+        const urlApi = urlBase+'/create' 
         const payload = { title }
 
         try {
@@ -26,11 +26,11 @@ function InputCreate({ setUpdate }) {
             setTitle('') // Limpiamos el input después de enviar el formulario
             setUpdate(prev => !prev) // Actualizamos el estado de actualización para que se vuelva a renderizar el componente padre
         } else {
-            throw new Error(`Error en la solicitud `)
+            throw new Error("se ha roto")
         }        
 
-        } catch (error) {
-            console.log(error)
+        } catch (err) {
+            console.log(err)
 
         }
     }
